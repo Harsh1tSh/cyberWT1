@@ -1,0 +1,90 @@
+{
+  "C:\\Users\\Harshit Sharma\\Desktop\\Aech\\cyberwaves-internship": {
+    "versionSfCore": null,
+    "versionFramework": "4.1.5",
+    "isWithinCompose": false,
+    "isCompose": false,
+    "composeOrgName": null,
+    "composeServiceName": null,
+    "servicePath": "C:\\Users\\Harshit Sharma\\Desktop\\Aech\\cyberwaves-internship",
+    "serviceConfigFileName": "serverless.yml",
+    "service": {
+      "service": "cyberwaves-internship",
+      "provider": {
+        "name": "aws",
+        "runtime": "nodejs14.x",
+        "stage": "dev",
+        "region": "us-east-1"
+      },
+      "functions": {
+        "processData": {
+          "handler": "handler.processData",
+          "events": [
+            {
+              "http": {
+                "path": "process-data",
+                "method": "post"
+              }
+            }
+          ]
+        }
+      },
+      "plugins": [
+        "serverless-offline"
+      ],
+      "custom": {
+        "serverless-offline": {
+          "noAuth": true
+        }
+      }
+    },
+    "serviceRawFile": "service: cyberwaves-internship\r\n\r\nprovider:\r\n  name: aws\r\n  runtime: nodejs14.x\r\n  stage: dev\r\n  region: us-east-1\r\n\r\nfunctions:\r\n  processData:\r\n    handler: handler.processData\r\n    events:\r\n      - http:\r\n          path: process-data\r\n          method: post\r\n\r\nplugins:\r\n  - serverless-offline\r\n\r\ncustom:\r\n  serverless-offline:\r\n    noAuth: true\r\n",
+    "command": [
+      "offline"
+    ],
+    "options": {},
+    "error": {
+      "message": "AWS credentials missing or invalid. Run \"serverless\" to set up AWS credentials, or learn more in our docs: http://slss.io/aws-creds-setup. Original error from AWS: Could not load credentials from any providers",
+      "code": "AWS_CREDENTIALS_MISSING"
+    },
+    "machineId": "7c9b463057fb4816238a3384dfa4a1f0",
+    "accessKeyV2": "<REDACTED>",
+    "accessKeyV1": "<REDACTED>",
+    "orgId": "09f2e940-881b-4b8b-94b8-7cde3489e304",
+    "orgName": "cyberwaves7ask",
+    "userId": "TffKQTLjs8MpXmTcWB",
+    "dashboard": {
+      "isEnabledForService": false,
+      "requiredAuthentication": false,
+      "orgFeaturesInUse": null,
+      "orgObservabilityIntegrations": null,
+      "serviceAppId": null,
+      "serviceProvider": null,
+      "instanceParameters": null
+    },
+    "userName": "cyberwaves7ask",
+    "subscription": null,
+    "userEmail": "hepta1000@gmail.com",
+    "serviceProviderAwsCfStackId": null,
+    "serviceProviderAwsCfStackCreated": null,
+    "serviceProviderAwsCfStackUpdated": null,
+    "serviceProviderAwsCfStackStatus": null,
+    "serviceProviderAwsCfStackOutputs": null
+  },
+  "unknown": {
+    "versionSfCore": null,
+    "versionFramework": "4.1.5",
+    "isWithinCompose": false,
+    "composeOrgName": null,
+    "composeServiceName": null,
+    "command": [],
+    "options": {},
+    "error": null,
+    "machineId": "7c9b463057fb4816238a3384dfa4a1f0",
+    "serviceProviderAwsCfStackId": null,
+    "serviceProviderAwsCfStackCreated": null,
+    "serviceProviderAwsCfStackUpdated": null,
+    "serviceProviderAwsCfStackStatus": null,
+    "serviceProviderAwsCfStackOutputs": null
+  }
+}

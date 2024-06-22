@@ -1,0 +1,18 @@
+service: cyberwaves-internship
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  stage: dev
+  region: us-east-1
+
+functions:
+  processData:
+    handler: handler.processData
+    events:
+      - http:
+          path: process-data
+          method: post
+
+plugins:
+  - serverless-offline
