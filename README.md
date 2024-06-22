@@ -84,3 +84,12 @@ This application anonymizes sensitive financial data, performs risk assessment c
     "risk": "<risk_assessment>"
 }
 ```
+
+
+## Testing
+Run unit and integration tests:
+```bash
+    npm test
+    ```
+
+
