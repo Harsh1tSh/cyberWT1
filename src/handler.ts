@@ -10,3 +10,5 @@ export const hello: APIGatewayProxyHandler = async (event, _context) => {
     }, null, 2),
   };
 };
+
+// was not able to use aws services due to account specific issues
