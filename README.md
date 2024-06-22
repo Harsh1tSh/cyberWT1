@@ -90,6 +90,5 @@ This application anonymizes sensitive financial data, performs risk assessment c
 Run unit and integration tests:
 ```bash
     npm test
-    ```
 
 
