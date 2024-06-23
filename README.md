@@ -12,6 +12,8 @@ This application anonymizes sensitive financial data, performs risk assessment c
 - Jest
 - Supertest
 
+- Tried to implemets it AWS but there seems to be an issue with my AWS account
+
 ## Setup
 
 1. **Clone the repository:**
